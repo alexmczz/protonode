@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTONODE v1.0</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>PROTONODE</h1>
+    </header>
+    <main class="container">
+        <div class="editor-container">
+            <textarea name="editor" id="editor" cols="60" rows="20"></textarea>
+            <button id="run-code">Run Code</button>
+        </div>
+        <div class="terminal-container">
+            <div id="terminal-output"></div>
+            <input type="text" id="terminal-input" placeholder="Type a command...">
+        </div>
+    </main>
+    <script src="renderer.js"></script>
+</body>
+</html>

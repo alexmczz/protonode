@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #252525;
+    background-image: url('../blueprint_wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header h1{
+    font-size: 50px;
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+.container {
+    display: flex;
+    border: 1px solid #002130;
+    background-color: #001038;
+    width: 80%;
+    height: 80%;
+}
+
+.editor-container, .terminal-container {
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.editor-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#editor {
+    background-color: #005583;
+    color: white;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+#run-code {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.terminal-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#terminal-output {
+    flex: 1;
+    background-color: #00046c;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+#terminal-input {
+    border: none;
+    padding: 10px;
+    font-family: monospace;
+    background-color: #010348;
+    color: rgb(255, 255, 255);
+}
